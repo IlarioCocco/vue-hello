@@ -1,6 +1,6 @@
 const app = new Vue(
     {
-        el: "#root",
+        el: "#root",//si puo  dare l'id che si vuole
         data: {
             benvenuto: "Vue Hello",
             classe: "red-hello",
