@@ -6,7 +6,7 @@ const app = new Vue(
             classe: "red-hello",
         },
         methods: {
-            benvenuto: function () {
+            saluta: function () {
                 alert(this.benvenuto);
             }
         }
