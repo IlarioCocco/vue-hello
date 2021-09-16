@@ -4,6 +4,7 @@ const app = new Vue(
         data: {
             benvenuto: "Vue Hello",
             classe: "red-hello",
+            linkImg: "https://v1.vuejs.org/images/logo.png",
         },
         methods: {
             saluta: function () {
