@@ -16,7 +16,6 @@ body {
     display: flex;
     justify-content: space-around;
     height: 100vh;
-    padding-top: 80px;
     max-width: 80%;
     margin: auto;
 }
@@ -38,6 +37,7 @@ button {
 .benvenuto {
     display: flex;
     justify-content: center;
+    padding-top: 100px;
     
 }
 
