@@ -2,9 +2,9 @@ const app = new Vue(
     {
         el: "#root",//si puo  dare l'id che si vuole
         data: {
-            benvenuto: "Vue Hello",
+            benvenuto: "Hello VueJs! Clicca su Cambia",
             classe: "red-hello",
-            linkImg: "https://v1.vuejs.org/images/logo.png",
+            linkImg: "/img/vueJsLogo.png",
         },
         methods: {
             saluta: function () {
