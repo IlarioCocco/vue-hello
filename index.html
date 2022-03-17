@@ -15,18 +15,36 @@
 
 <body>
     <div class="container">
-        <h2>ESERCIZIO VUE HELLO</h2>
+        <h2 class="esercizio">ESERCIZIO VUE HELLO</h2>
         <hr>
+        <!-- v-[NOME DIRETTIVA]:[NOME ARGOMENTO] -->
         <!-- si puo dare l'id che si vuole -->
         <div id="root">
-            <h1 class="red-hello">benvenuto: {{benvenuto}}</h1>
-            <button class="red-hello" @click="saluta()">click</button>
-            <!-- v-[NOME DIRETTIVA]:[NOME ARGOMENTO] -->
-            <img v-bind:src="linkImg" alt="imagine vue js">
-            <button class="red-hello" @click="linkImg = 'https://triskellsolution.com/wp-content/uploads/2020/07/vue_js_logo.png' ">cambia imagine</button>
+            <h3 class="benvenuto">benvenuto {{benvenuto}}!!!</h3>
+           
+            <div class="box">
+                <div>
+                    <button
+                        @click="saluta()">
+                        click
+                    </button>
+                </div>
+
+                <!-- ommetto il v-bind inserendo esclusivamente i 2 : punti -->
+                <div>
+                    <img :src="linkImg" alt="imagine vue js">
+                </div>
+            
+                <div>
+                    <button 
+                        @click="linkImg = 'https://triskellsolution.com/wp-content/uploads/2020/07/vue_js_logo.png' ">
+                        cambia
+                    </button>
+                </div>
+            </div>
+            
         </div>
     </div>
-  
 
 <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 <script src="js/scripts.js"></script>
