@@ -3,13 +3,22 @@ body {
 }
 
 .esercizio {
+    background-color: rgb(138, 203, 190);
+    position: fixed;
+    width: 100%;
+    margin: auto;
     display: flex;
     justify-content: center;
+    padding: 20px;
 }
 
 .box {
     display: flex;
     justify-content: space-around;
+    height: 100vh;
+    padding-top: 80px;
+    max-width: 80%;
+    margin: auto;
 }
 
 .container{
@@ -29,6 +38,7 @@ button {
 .benvenuto {
     display: flex;
     justify-content: center;
+    
 }
 
 .imageLogoVue{
