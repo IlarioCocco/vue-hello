@@ -7,12 +7,19 @@ const app = new Vue(
             classeBottoneBiancoNero: "black_white",
             classeBottoneColore: "color", 
             classeBkgInput: "input",
+            classeColore: "text-white"
         },
         methods: {
-            visual: function () {
+            visual: function() {
                 document.getElementById("vueHello").innerHTML = this.message;
-            }
-        }
+            },
+            myFunction: function() {
+                window.location.reload()
+            },
+            changeColor: function() {
+                this.classeColore = "text-yellow";
+            },
+        },
     }
 );
 

@@ -9,8 +9,9 @@
     top: 0;
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     padding: 20px;
+    align-items: center;
     color: white;
 }
 .box,
@@ -21,7 +22,7 @@
     padding: 40px;
     border-radius: 15px;
     border: 1px solid rgb(104, 178, 129);
-    /* border: 4mm ridge rgba(104, 178, 129, .8); */
+    border: 4mm ridge rgba(104, 178, 129, .8);
     align-items: center;
     max-width: 100%;
     margin: 20px;
@@ -70,5 +71,12 @@ button {
 } 
 .pen {
     color: rgb(0, 113, 36);
+    margin: 5px;
 }
 
+.text-white {
+    color: rgb(255, 255, 255);
+}
+.text-yellow {
+    color: rgb(255, 255, 0);
+}

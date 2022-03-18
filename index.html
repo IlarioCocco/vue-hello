@@ -16,13 +16,17 @@
     <title>Hello Vue</title>
 </head>
     <body>
-        <div class="esercizio">
-            <h2 id="vueHello">ESERCIZIO HELLO VUE</h2>
-        </div>
+         <div id="root">
+            <div class="esercizio">
+                <h2 :class="classeColore" id="vueHello">ESERCIZIO HELLO VUE</h2>
+                <div>
+                    <button @click="myFunction()">reload <i class="fa-solid fa-arrow-rotate-right pen"></i></button>
+                    <button @click="changeColor()">color<i class="fa-solid fa-palette pen"></i></button>
+                </div>
+            </div>
         
         <!-- v-[NOME DIRETTIVA]:[NOME ARGOMENTO] -->
-        
-        <div id="root">
+       
             <div class="hello box">
                 <h5 class="pen">{{message}} ... <i class="fa-solid fa-pencil"></i></h5>
                 <input :class="classeBkgInput" type="text" v-model="message" placeholder="write something">
