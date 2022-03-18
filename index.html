@@ -15,12 +15,19 @@
 
 <body>
     <div>
-        <h2 class="esercizio">ESERCIZIO VUE HELLO</h2>
+        <div class="esercizio">
+            <h2>ESERCIZIO VUE HELLO</h2>
+        </div>
+        
         <!-- v-[NOME DIRETTIVA]:[NOME ARGOMENTO] -->
-        <!-- si puo dare l'id che si vuole -->
+        <!-- si puo dare l'id che si vuole id="root" oppure id="franco :)" -->
         <div id="root">
 
-            <h3 class="benvenuto">{{benvenuto}}!!!</h3>
+            <div class="hello box">
+                <h5 class="benvenuto">{{message}}...</h5>
+                <input type="text" v-model="message">
+            </div>
+           
             <div class="box">
                 <div>
                     <button
