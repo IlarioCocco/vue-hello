@@ -46,14 +46,13 @@ input:hover {
 }
 button {
     border: 1px solid rgb(104, 178, 129);
-    color: white;
     border-radius: 15px;
     color: grey;
     padding: 10px;
     width: 110px;
 }
 .imageLogoVue{
-    max-width: 100%;
+    max-width: 60%;
     margin: auto;
     display: flex;
     justify-content: center;
@@ -69,7 +68,6 @@ button {
     background-color: #68b281;
     color: white;
 } 
-
 .pen {
     color: rgb(0, 113, 36);
 }
