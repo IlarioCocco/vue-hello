@@ -11,6 +11,7 @@
     display: flex;
     justify-content: center;
     padding: 20px;
+    color: white;
 }
 .box,
 .hello {
@@ -37,6 +38,7 @@ input {
     border: 1px solid #68b281;
     padding: 10px;
     cursor: pointer;
+    color: grey;
 }
 input:hover {
     background-color: #68b281;
