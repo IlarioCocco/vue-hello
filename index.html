@@ -13,11 +13,11 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- font-awesome -->
     <link rel="stylesheet" href="css/style.css">
-    <title>vue Hello</title>
+    <title>Hello Vue</title>
 </head>
     <body>
         <div class="esercizio">
-            <h2>ESERCIZIO VUE HELLO</h2>
+            <h2 id="vueHello">ESERCIZIO HELLO VUE</h2>
         </div>
         
         <!-- v-[NOME DIRETTIVA]:[NOME ARGOMENTO] -->
@@ -38,7 +38,7 @@
 
                 <!-- ommetto il v-bind inserendo esclusivamente i 2 punti= : -->
                 <div>
-                    <img @click="alert()" class="imageLogoVue" :src="linkImg" alt="imagine vue js">
+                    <img @click="visual()" class="imageLogoVue" :src="linkImg" alt="imagine vue js">
                 </div>
             
                 <div>
