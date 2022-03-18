@@ -4,8 +4,8 @@ const app = new Vue(
         data: {
             message: "Hello Vue",
             linkImg: "/img/vueBW.png",
-            classeBottoneBiancoNero: "bw",
-            classeBottoneColore: "c", 
+            classeBottoneBiancoNero: "black_white",
+            classeBottoneColore: "color", 
             classeBkgInput: "input",
         },
         methods: {

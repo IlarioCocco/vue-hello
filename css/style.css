@@ -57,14 +57,18 @@ button {
     justify-content: center;
     cursor: pointer;
 }
-.bw:hover {
+.black_white:hover {
     border: 2px solid rgb(98, 98, 98);
     background-color: grey;
     color: white;
 }
-.c:hover {
+.color:hover {
     border: 2px solid rgb(0, 113, 36);
     background-color: #68b281;
     color: white;
 } 
+
+.pen {
+    color: rgb(0, 113, 36);
+}
 
