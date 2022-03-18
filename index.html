@@ -14,17 +14,17 @@
 </head>
 
 <body>
-    <div>
+   
         <div class="esercizio">
             <h2>ESERCIZIO VUE HELLO</h2>
         </div>
         
         <!-- v-[NOME DIRETTIVA]:[NOME ARGOMENTO] -->
-        <!-- si puo dare l'id che si vuole id="root" oppure id="franco :)" -->
+        
         <div id="root">
 
             <div class="hello box">
-                <h5 class="benvenuto">{{message}}...</h5>
+                <h5>{{message}}...</h5>
                 <input type="text" v-model="message">
             </div>
            
@@ -36,7 +36,7 @@
                     </button>
                 </div>
 
-                <!-- ommetto il v-bind inserendo esclusivamente i 2 : punti -->
+                <!-- ommetto il v-bind inserendo esclusivamente i 2 punti= : -->
                 <div>
                     <img class="imageLogoVue" :src="linkImg" alt="imagine vue js">
                 </div>
@@ -44,13 +44,13 @@
                 <div>
                     <button 
                         @click="linkImg = '/img/vue.png' ">
-                        cambia
+                        colore logo
                     </button>
                 </div>
             </div>
             
         </div>
-    </div>
+   
 
 <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 <script src="js/scripts.js"></script>

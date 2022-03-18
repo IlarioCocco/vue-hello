@@ -7,45 +7,32 @@ body {
     background-color: rgb(255, 255, 255);
 }
 
-section {
-    height: 10vh;
-}
-
 .esercizio {
     background-color: rgb(138, 203, 190);
     position: fixed;
-    width: 100%;
-    margin: auto;
-    display: flex;
-    justify-content: space-evenly;
-    padding: 20px;
     top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
 }
 
-.box {
+.box,
+.hello {
     display: flex;
     justify-content: space-between;
-    max-width: 100%;
-    margin: 150px;
     background-color: rgba(215, 215, 215, 0);
     padding: 40px;
     border-radius: 15px;
     border: 1px solid hsl(0, 0%, 59%);
-    
+    align-items: center;
+    max-width: 100%;
+    margin: 20px;
 }
 
 .hello {
-    display: flex;
-    justify-content: space-between;
-    max-width: 100%;
-    margin: 150px;
     flex-wrap: wrap;
-    align-items: end;
-}
-
-.container{
-    max-width: 80%;
-    margin: auto;
+    margin-top: 100px;
 }
 
 button {
@@ -54,14 +41,7 @@ button {
     border-radius: 15px;
     border: none;
     padding: 10px;
-    width: 80px;
-}
-
-.benvenuto {
-    display: flex;
-    justify-content: center;
-    margin-top: 100px;
-    
+    width: 110px;
 }
 
 .imageLogoVue{
@@ -76,7 +56,7 @@ input {
    text-align: center;
    border: none;
    border-radius: 15px;
-   background-color: aquamarine;
+   border: 1px solid rgb(16, 166, 116);
    padding: 10px;
 }
 
