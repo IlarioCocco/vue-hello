@@ -4,6 +4,9 @@ const app = new Vue(
         data: {
             message: "Hello VueJs",
             linkImg: "/img/vueBW.png",
+            classeBottoneBiancoNero: "bw",
+            classeBottoneColore: "c", 
+            classeBkgInput: "input",
         },
         methods: {
             alert: function () {

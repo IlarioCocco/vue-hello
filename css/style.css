@@ -38,11 +38,14 @@ input {
     padding: 10px;
     cursor: pointer;
 }
-button {
+input:hover {
     background-color: #68b281;
+}
+button {
+    border: 1px solid rgb(104, 178, 129);
     color: white;
     border-radius: 15px;
-    border: none;
+    color: grey;
     padding: 10px;
     width: 110px;
 }
@@ -54,9 +57,13 @@ button {
     cursor: pointer;
 }
 .bw:hover {
-    border: 2px solid rgb(144, 144, 144);
+    border: 2px solid rgb(98, 98, 98);
+    background-color: grey;
+    color: white;
 }
 .c:hover {
     border: 2px solid rgb(0, 113, 36);
-}
+    background-color: #68b281;
+    color: white;
+} 
 
