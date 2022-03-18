@@ -24,7 +24,7 @@ section {
 
 .box {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     max-width: 100%;
     margin: 150px;
     background-color: rgba(215, 215, 215, 0);
