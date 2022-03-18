@@ -19,7 +19,8 @@
     background-color: rgba(215, 215, 215, 0);
     padding: 40px;
     border-radius: 15px;
-    border: 1px solid #68b281;
+    border: 1px solid rgb(104, 178, 129);
+    /* border: 4mm ridge rgba(104, 178, 129, .8); */
     align-items: center;
     max-width: 100%;
     margin: 20px;
