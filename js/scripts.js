@@ -6,7 +6,7 @@ const app = new Vue(
             linkImg: "/img/vueBW.png",
         },
         methods: {
-            saluta: function () {
+            alert: function () {
                 alert(this.message);
             }
         }
