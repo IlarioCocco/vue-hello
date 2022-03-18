@@ -29,14 +29,13 @@
                 <div>
                     <button class="bw"  
                         @click="linkImg = '/img/vueBW.png' ">
-                        <!-- @click="saluta()" -->
                         bianco nero
                     </button>
                 </div>
 
                 <!-- ommetto il v-bind inserendo esclusivamente i 2 punti= : -->
                 <div>
-                    <img class="imageLogoVue" :src="linkImg" alt="imagine vue js">
+                    <img @click="saluta()" class="imageLogoVue" :src="linkImg" alt="imagine vue js">
                 </div>
             
                 <div>
