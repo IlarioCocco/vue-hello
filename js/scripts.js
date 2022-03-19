@@ -17,7 +17,13 @@ const app = new Vue(
                 window.location.reload()
             },
             changeColor: function() {
-                this.classeColore = "text-yellow";
+                if (this.classeColore == "text-white") {
+                    this.classeColore = "text-blue";
+                } else if (this.classeColore == "text-blue") {
+                    this.classeColore = "text-yellow";
+                } else {
+                    this.classeColore = "text-white";
+                }
             },
         },
     }

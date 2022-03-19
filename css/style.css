@@ -12,7 +12,7 @@
     justify-content: space-between;
     padding: 20px;
     align-items: center;
-    color: white;
+   
 }
 .box,
 .hello {
@@ -29,7 +29,7 @@
 }
 .hello {
     flex-wrap: wrap;
-    margin-top: 100px;
+    margin-top: 115px;
 }
 input {
     display: flex;
@@ -71,12 +71,17 @@ button {
 } 
 .pen {
     color: rgb(0, 113, 36);
-    margin: 5px;
+    margin: 10px;
 }
-
 .text-white {
     color: rgb(255, 255, 255);
 }
+.text-blue {
+    color: rgb(56, 124, 241);
+}
 .text-yellow {
-    color: rgb(255, 255, 0);
+    color: rgb(241, 232, 56);
+}
+.colore {
+    background-color: rgba(150, 247, 126, 0.607);
 }
