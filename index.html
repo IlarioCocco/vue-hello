@@ -19,17 +19,18 @@
          <div id="root">
         <!-- header -->
             <header>
-                <h2 :class="classeColore" id="vueHello">ESERCIZIO HELLO VUE</h2>
+                <h2 :class="classeColore" id="vueHello">HELLO VUE 4 COLORS</h2>
                 <div>
                     <button @click="myFunction()">reload <i class="fa-solid fa-arrow-rotate-right pen"></i></button>
                     <button class="colore" @click="changeColor()">color <i class="fa-solid fa-fill-drip pen" :class="classeColore"></i></button>
+                    <button @click="mySeeFunction" >see <i class="fa-solid fa-eye"></i></button>
                 </div>
             </header>
         <!-- header -->
 
         <!-- v-on =   @ (eventi)      @EVENTO = "ARGOMENTO"
              v-bind = : (direttiva)   :DIRETTIVA = "ARGOMENTO" -->
-             
+
         <!-- main up -->
             <main class="hello box">
                 <h5 class="pen">{{message}} ... <i class="fa-solid fa-pencil"></i></h5>
@@ -47,10 +48,11 @@
                 </div>
 
                 <!-- ommetto il v-bind inserendo esclusivamente i 2 punti= : -->
-                <div>
-                    <img @click="visual()" class="imageLogoVue" :src="linkImg" alt="imagine vue js">
+                <div class="mainDown">
+                    <Transition>
+                        <img v-if="vediImagine"  @click="visual()" class="imageLogoVue" :src="linkImg" alt="imagine vue js">
+                    </Transition>
                 </div>
-            
                 <div>
                     <button :class="classeBottoneColore"  
                         @click="linkImg = '/img/vue.png' ">

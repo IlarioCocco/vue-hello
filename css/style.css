@@ -4,7 +4,7 @@
     padding: 0;
 }
 header {
-    background-color: #68b281e8;
+    background-color: #68b281eb;
     position: fixed;
     top: 0;
     width: 100%;
@@ -81,6 +81,22 @@ button {
 .text-yellow {
     color: rgb(241, 232, 56);
 }
+.text-red {
+    color: rgb(201, 80, 84);
+}
 .colore {
     background-color: rgba(150, 247, 126, 0.607);
+}
+
+.v-enter-active,
+.v-leave-active {
+    transition: opacity 2s ease;
+}
+
+.v-enter-from,
+.v-leave-to {
+    opacity: 0;
+}
+.mainDown {
+    height: 60vh;
 }

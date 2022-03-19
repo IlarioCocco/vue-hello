@@ -7,7 +7,8 @@ const app = new Vue(
             classeBottoneBiancoNero: "black_white",
             classeBottoneColore: "color", 
             classeBkgInput: "input",
-            classeColore: "text-white"
+            classeColore: "text-white",
+            vediImagine: false,
         },
         methods: {
             visual: function() {
@@ -21,10 +22,16 @@ const app = new Vue(
                     this.classeColore = "text-blue";
                 } else if (this.classeColore == "text-blue") {
                     this.classeColore = "text-yellow";
-                } else {
-                    this.classeColore = "text-white";
+                } else if (this.classeColore == "text-yellow") {
+                    this.classeColore = "text-red";
+                } else if (this.classeColore == "text-red") {
+                    this.classeColore = "text-white"
                 }
             },
+                mySeeFunction: function() {
+                this.vediImagine = (this.vediImagine == false)? true : false; // operatore ternario in function
+            },
+           
         },
     }
 );
