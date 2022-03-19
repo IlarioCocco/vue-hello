@@ -17,22 +17,28 @@
 </head>
     <body>
          <div id="root">
-            <div class="esercizio">
+        <!-- header -->
+            <header>
                 <h2 :class="classeColore" id="vueHello">ESERCIZIO HELLO VUE</h2>
                 <div>
                     <button @click="myFunction()">reload <i class="fa-solid fa-arrow-rotate-right pen"></i></button>
                     <button class="colore" @click="changeColor()">color <i class="fa-solid fa-fill-drip pen" :class="classeColore"></i></button>
                 </div>
-            </div>
-        
-        <!-- v-[NOME DIRETTIVA]:[NOME ARGOMENTO] -->
-       
-            <div class="hello box">
+            </header>
+        <!-- header -->
+
+        <!-- v-on =   @ (eventi)      @EVENTO = "ARGOMENTO"
+             v-bind = : (direttiva)   :DIRETTIVA = "ARGOMENTO" -->
+             
+        <!-- main up -->
+            <main class="hello box">
                 <h5 class="pen">{{message}} ... <i class="fa-solid fa-pencil"></i></h5>
                 <input :class="classeBkgInput" type="text" v-model="message" placeholder="write something">
-            </div>
-        
-            <div class="box">
+            </main>
+        <!-- main up -->
+
+        <!-- main down -->
+            <main down class="box">
                 <div>
                     <button :class="classeBottoneBiancoNero"  
                         @click="linkImg = '/img/vueBW.png' ">
@@ -51,7 +57,8 @@
                         to colors
                     </button>
                 </div>
-            </div>
+            </main>
+        <!-- main down -->
         </div>
 
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
