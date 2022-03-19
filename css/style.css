@@ -10,9 +10,9 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    padding: 30px 30px 30px 30px;
     align-items: center;
-   
+    height: 100px;
 }
 .box,
 .hello {
@@ -22,7 +22,7 @@
     padding: 40px;
     border-radius: 15px;
     border: 1px solid rgb(104, 178, 129);
-    border: 4mm ridge rgba(104, 178, 129, .8);
+    border: 3mm ridge rgba(104, 178, 129, .8);
     align-items: center;
     max-width: 100%;
     margin: 20px;
@@ -37,7 +37,7 @@ input {
     border: none;
     border-radius: 15px;
     border: 1px solid #68b281;
-    padding: 10px;
+    padding: 5px;
     cursor: pointer;
     color: grey;
 }
@@ -49,8 +49,8 @@ button {
     border: 1px solid rgb(104, 178, 129);
     border-radius: 15px;
     color: grey;
-    padding: 10px;
-    width: 110px;
+    padding: 5px;
+    width: 100px;
 }
 .imageLogoVue{
     max-width: 60%;
@@ -71,13 +71,12 @@ button {
 } 
 .pen {
     color: rgb(0, 113, 36);
-    margin: 10px;
 }
 .text-white {
     color: rgb(255, 255, 255);
 }
 .text-blue {
-    color: rgb(56, 124, 241);
+    color: rgb(0, 149, 255);
 }
 .text-yellow {
     color: rgb(241, 232, 56);
