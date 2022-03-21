@@ -18,7 +18,7 @@ header {
 .box,
 .hello {
     display: flex;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
     justify-content: space-between;
     background-color: rgba(215, 215, 215, 0);
     padding: 40px;
@@ -71,12 +71,13 @@ button {
     color: white;
 }
 .color:hover {
-    border: 2px solid rgb(0, 113, 36);
+    border: 2px solid rgb(0, 129, 41);
     background-color: #68b281;
     color: white;
 } 
 .pen {
-    color: #007124;
+    color: rgb(47, 150, 121);
+    margin: 2px;
 }
 
 /*------color text------ */

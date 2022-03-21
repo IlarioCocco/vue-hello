@@ -16,14 +16,14 @@
     <title>Hello Vue</title>
 </head>
     <body>
-         <div id="root">
+        <div id="root">
         <!-- header -->
             <header>
                 <h2 :class="classeColore" id="vueHello">CIAO VUE JS</h2>
                 <div>
                     <button @click="myFunctionReload()">reload <i class="fa-solid fa-arrow-rotate-right pen"></i></button>
-                    <button class="colore" @click="changeColor()">color <i class="fa-solid fa-fill-drip pen" :class="classeColore"></i></button>
-                    <button @click="mySeeFunction" >see <i class="fa-solid fa-eye"></i></button>
+                    <button @click="changeColor()" class="colore">color <i class="fa-solid fa-fill-drip pen" :class="classeColore"></i></button>
+                    <button @click="mySeeFunction" >vue <i class="fa-solid fa-eye pen"></i></button>
                 </div>
             </header>
         <!-- header -->
@@ -46,13 +46,13 @@
                 <div>
                     <div class="mainDown">
                         <Transition>
-                            <img v-if="vediImagine"  @click="visual()" class="imageLogoVue" :src="linkImg" alt="imagine vue js">
+                            <img v-if="vediImagine" @click="visual()" class="imageLogoVue" :src="linkImg" alt="imagine vue js">
                         </Transition>
                     </div>
                     <div class="stringheColor">
                         <h4 :class="classeColore"
-                            v-for="(todo, i) in todosColors" :key="i">
-                            {{ todo.message }},&nbsp
+                            v-for="(todo, i) in todosColors" :key="todo.i">
+                            {{i}} {{ todo.codiceColore }},&nbsp
                         </h4>
                     </div>
                 </div>

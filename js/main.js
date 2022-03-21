@@ -10,21 +10,19 @@ const app = new Vue(
             classeColore: "text-white",
             vediImagine: false,
             todosColors: [
-            {message: "#ffffff"},
-            {message: "#0095ff"},
-            {message: "#e8da3d"},
-            {message: "#c95054"},
-            {message: "#0b9547"},
+            {codiceColore: "#ffffff"},
+            {codiceColore: "#0095ff"},
+            {codiceColore: "#e8da3d"},
+            {codiceColore: "#c95054"},
+            {codiceColore: "#0b9547"},
         ],  
             string: []
         },
         methods: {
-            visual: function() {
-                document.getElementById("vueHello").innerHTML = this.message;
+            mySeeFunction: function() {
+            this.vediImagine = (this.vediImagine == false)? true : false; // operatore ternario in function
             },
-            myFunctionReload: function() {
-                window.location.reload()
-            },
+
             changeColor: function() {
                 if (this.classeColore == "text-white") {
                     this.classeColore = "text-blue";
@@ -38,9 +36,17 @@ const app = new Vue(
                     this.classeColore = "text-white"
                 }
             },
-            mySeeFunction: function() {
-            this.vediImagine = (this.vediImagine == false)? true : false; // operatore ternario in function
+
+            myFunctionReload: function() {
+                window.location.reload()
             },
+
+            visual: function() {
+                document.getElementById("vueHello").innerHTML = this.codiceColore;
+            },
+            
+            
+            
         },
     }
 );
