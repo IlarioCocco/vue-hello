@@ -10,10 +10,11 @@ const app = new Vue(
             classeColore: "text-white",
             vediImagine: false,
             todosColors: [
-            {message: "#373737"},
+            {message: "#ffffff"},
             {message: "#0095ff"},
             {message: "#e8da3d"},
             {message: "#c95054"},
+            {message: "#0b9547"},
         ],  
             string: []
         },

@@ -22,12 +22,15 @@ header {
     background-color: rgba(215, 215, 215, 0);
     padding: 40px;
     border-radius: 15px;
-    border: 1px solid rgb(104, 178, 129);
+    /* border: 1px solid rgb(104, 178, 129); */
     border: 3mm ridge rgba(104, 178, 129, .8);
     align-items: center;
-    max-width: 100%;
-    margin: 20px;
-    background-color: #007124;
+    max-width: 70%;
+    margin: auto;
+    background-color: #bebebe;
+}
+.box {
+    margin-top: 20px;
 }
 .hello {
     flex-wrap: wrap;
@@ -74,11 +77,10 @@ button {
 .pen {
     color: #007124;
 }
+
+/*------color text------ */
 .text-white {
-    color: white;
-}
-.text-green {
-    color: #4dff00;
+    color: #ffffff;
 }
 .text-blue {
     color: #0095ff;
@@ -89,6 +91,10 @@ button {
 .text-red {
     color: #c95054;
 }
+.text-green {
+    color: #0b9547;
+}
+/*------color text------ */
 .colore {
     background-color: rgba(150, 247, 126, 0.607);
 }
