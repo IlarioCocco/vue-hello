@@ -41,12 +41,6 @@ const app = new Vue(
             mySeeFunction: function() {
             this.vediImagine = (this.vediImagine == false)? true : false; // operatore ternario in function
             },
-
-            // addString: function(i) {
-            //     this.string.push(i);
-            //     console.log(string);
-            // }
-
         },
     }
 );

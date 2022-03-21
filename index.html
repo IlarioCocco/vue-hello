@@ -27,17 +27,14 @@
                 </div>
             </header>
         <!-- header -->
-
         <!-- v-on =   @ (eventi)      @EVENTO = "ARGOMENTO"
              v-bind = : (direttiva)   :DIRETTIVA = "ARGOMENTO" -->
-
         <!-- main up -->
             <main class="hello box">
                 <h5 class="pen">{{message}} ... <i class="fa-solid fa-pencil"></i></h5>
                 <input :class="classeBkgInput" type="text" v-model="message" placeholder="write something">
             </main>
         <!-- main up -->
-
         <!-- main down -->
             <main class="box">
                 <div>
@@ -46,7 +43,6 @@
                        black white
                     </button>
                 </div>
-
                 <div>
                     <div class="mainDown">
                         <Transition>
@@ -60,7 +56,6 @@
                         </h4>
                     </div>
                 </div>
-                
                 <div>
                     <button :class="classeBottoneColore"  
                         @click="linkImg = '/img/vue.svg' ">
@@ -70,7 +65,6 @@
             </main>
         <!-- main down -->
         </div>
-
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     <script src="js/scripts.js"></script>
     </body>
