@@ -2,19 +2,26 @@ const app = new Vue(
     {
         el: "#root",//si puo  dare l'id che si vuole
         data: {
-            message: "HELLO VUE",
-            linkImg: "/img/vueBW.png",
+            message: "HELLO VUE JS",
+            linkImg: "/img/vue.svg",
             classeBottoneBiancoNero: "black_white",
             classeBottoneColore: "color", 
             classeBkgInput: "input",
             classeColore: "text-white",
             vediImagine: false,
+            todosColors: [
+            {message: "#373737"},
+            {message: "#0095ff"},
+            {message: "#e8da3d"},
+            {message: "#c95054"},
+        ],  
+            string: []
         },
         methods: {
             visual: function() {
                 document.getElementById("vueHello").innerHTML = this.message;
             },
-            myFunction: function() {
+            myFunctionReload: function() {
                 window.location.reload()
             },
             changeColor: function() {
@@ -25,13 +32,20 @@ const app = new Vue(
                 } else if (this.classeColore == "text-yellow") {
                     this.classeColore = "text-red";
                 } else if (this.classeColore == "text-red") {
+                    this.classeColore = "text-green"
+                } else {
                     this.classeColore = "text-white"
                 }
             },
-                mySeeFunction: function() {
-                this.vediImagine = (this.vediImagine == false)? true : false; // operatore ternario in function
+            mySeeFunction: function() {
+            this.vediImagine = (this.vediImagine == false)? true : false; // operatore ternario in function
             },
-           
+
+            // addString: function(i) {
+            //     this.string.push(i);
+            //     console.log(string);
+            // }
+
         },
     }
 );

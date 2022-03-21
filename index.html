@@ -19,9 +19,9 @@
          <div id="root">
         <!-- header -->
             <header>
-                <h2 :class="classeColore" id="vueHello">HELLO VUE 4 COLORS</h2>
+                <h2 :class="classeColore" id="vueHello">CIAO VUE JS</h2>
                 <div>
-                    <button @click="myFunction()">reload <i class="fa-solid fa-arrow-rotate-right pen"></i></button>
+                    <button @click="myFunctionReload()">reload <i class="fa-solid fa-arrow-rotate-right pen"></i></button>
                     <button class="colore" @click="changeColor()">color <i class="fa-solid fa-fill-drip pen" :class="classeColore"></i></button>
                     <button @click="mySeeFunction" >see <i class="fa-solid fa-eye"></i></button>
                 </div>
@@ -39,23 +39,31 @@
         <!-- main up -->
 
         <!-- main down -->
-            <main down class="box">
+            <main class="box">
                 <div>
                     <button :class="classeBottoneBiancoNero"  
-                        @click="linkImg = '/img/vueBW.png' ">
+                        @click="linkImg = '/img/vue_b_w.png' ">
                        black white
                     </button>
                 </div>
 
-                <!-- ommetto il v-bind inserendo esclusivamente i 2 punti= : -->
-                <div class="mainDown">
-                    <Transition>
-                        <img v-if="vediImagine"  @click="visual()" class="imageLogoVue" :src="linkImg" alt="imagine vue js">
-                    </Transition>
+                <div>
+                    <div class="mainDown">
+                        <Transition>
+                            <img v-if="vediImagine"  @click="visual()" class="imageLogoVue" :src="linkImg" alt="imagine vue js">
+                        </Transition>
+                    </div>
+                    <div class="stringheColor">
+                        <h4 :class="classeColore"
+                            v-for="(todo, i) in todosColors" :key="i">
+                            {{ todo.message }},&nbsp
+                        </h4>
+                    </div>
                 </div>
+                
                 <div>
                     <button :class="classeBottoneColore"  
-                        @click="linkImg = '/img/vue.png' ">
+                        @click="linkImg = '/img/vue.svg' ">
                         to colors
                     </button>
                 </div>
