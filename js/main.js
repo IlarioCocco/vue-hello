@@ -1,13 +1,10 @@
-const app = new Vue(
-    {
-        el: "#root",//si puo  dare l'id che si vuole
+const app = new Vue({
+        el: "#root", //si puo  dare l'id che si vuole
         data: {
+            classeColore: "text-white",
             message: "HELLO VUE JS",
             linkImg: "/img/vue.svg",
-            classeBottoneBiancoNero: "black_white",
-            classeBottoneColore: "color", 
             classeBkgInput: "input",
-            classeColore: "text-white",
             vediImagine: false,
             todosColors: [
             {codiceColore: "#ffffff"},
@@ -16,11 +13,22 @@ const app = new Vue(
             {codiceColore: "#c95054"},
             {codiceColore: "#0b9547"},
         ],  
-            string: []
+            string: [],
+
+            images: [
+            "/img/vue.svg", 
+            "/img/vue_pink.png",
+            "/img/vue_red.png",
+            "/img/vue_blue.png",
+            "/img/vue_viola.png",
+        ],
+
+            indexImage: 0
+
         },
         methods: {
-            mySeeFunction: function() {
-            this.vediImagine = (this.vediImagine == false)? true : false; // operatore ternario in function
+            myFunctionReload: function() {
+                window.location.reload()
             },
 
             changeColor: function() {
@@ -37,18 +45,43 @@ const app = new Vue(
                 }
             },
 
-            myFunctionReload: function() {
-                window.location.reload()
+            mySeeFunction: function() {
+            this.vediImagine = (this.vediImagine == false)? true : false; // operatore ternario in function
             },
 
             visual: function() {
-                document.getElementById("vueHello").innerHTML = this.codiceColore;
+                document.getElementById("vueHello").innerHTML = this.message;
             },
-            
-            
-            
+
+            leftImg: function() {
+                this.indexImage++;
+
+                if( this.indexImage >=  this.images.length ) {
+                    this.indexImage = 0;
+                }
+            },
+
+            rightImg: function() {
+                this.indexImage--;
+
+                if ( this.indexImage == - 1 ) {
+                    this.indexImage = this.images.length - 1;
+                }
+            },
+
+            isCircleActive: function(indexCircle) {
+                if ( this.indexImage == indexCircle ) {
+                    return 'active';
+                } 
+                else {
+                    return '';
+                }
+            },
+
+            changeImage: function(indexCircle) {
+                this.indexImage = indexCircle;
+            },
         },
     }
 );
-
 

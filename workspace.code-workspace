@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"name": "vue-hello @ c900dd5",
+			"uri": "gitlens://7b22726566223a2263393030646435326533643534373232363438356663393330306434303536666165653330313131222c227265706f50617468223a22633a2f55736572732f6c616c6c6f2f4f6e6544726976652f4465736b746f702f626f6f6c65616e20323032312f6573657263697a692f7675652d68656c6c6f227d/c:/Users/lallo/OneDrive/Desktop/boolean 2021/esercizi/vue-hello?{\"ref\":\"c900dd5\"}"
+		}
+	],
+	"settings": {
+		"liveServer.settings.port": 5502,
+		"liveServer.settings.multiRootWorkspaceName": "vue-hello"
+	}
+}

@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
 }
+
 header {
     background-color: #68b281eb;
     position: fixed;
@@ -15,10 +16,9 @@ header {
     align-items: center;
     height: 100px;
 }
-.box,
-.hello {
+
+.box {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     background-color: rgba(215, 215, 215, 0);
     padding: 40px;
@@ -30,13 +30,13 @@ header {
     margin: auto;
     background-color: #bebebe;
 }
-.box {
-    margin-top: 20px;
-}
+
 .hello {
     flex-wrap: wrap;
     margin-top: 115px;
+    margin-bottom: 20px;
 }
+
 input {
     display: flex;
     text-align: center;
@@ -47,10 +47,12 @@ input {
     cursor: pointer;
     color: grey;
 }
+
 input:hover {
     background-color: #5fb97d8f;
     color: white;
 }
+
 button {
     border: 1px solid rgb(104, 178, 129);
     border-radius: 15px;
@@ -58,23 +60,27 @@ button {
     padding: 5px;
     width: 100px;
 }
-.imageLogoVue{
-    max-width: 60%;
+
+.imageLogoVue {
+    max-width: 100%;
     margin: auto;
     display: flex;
     justify-content: center;
     cursor: pointer;
 }
+
 .black_white:hover {
     border: 2px solid rgb(98, 98, 98);
     background-color: grey;
     color: white;
 }
+
 .color:hover {
     border: 2px solid rgb(0, 129, 41);
     background-color: #68b281;
     color: white;
-} 
+}
+
 .pen {
     color: rgb(47, 150, 121);
     margin: 2px;
@@ -84,37 +90,71 @@ button {
 .text-white {
     color: #ffffff;
 }
+
 .text-blue {
     color: #0095ff;
 }
+
 .text-yellow {
     color: #e8da3d;
 }
+
 .text-red {
     color: #c95054;
 }
+
 .text-green {
     color: #0b9547;
 }
+
 /*------color text------ */
 .colore {
     background-color: rgba(150, 247, 126, 0.607);
 }
+
 .v-enter-active,
 .v-leave-active {
     transition: opacity 2.5s ease;
 }
+
 .v-enter-from,
 .v-leave-to {
     opacity: 0;
 }
+
 .mainDown {
     height: 55vh;
     display: flex;
 }
+
 .stringheColor {
     display: flex;
     justify-content: center;
     padding: 20px;
     flex-wrap: wrap;
+}
+
+.circles {
+    padding: 0px 30px 0px 30px;
+    /* t r b l */
+    border-radius: 15px;
+    /* background-color: hsla(0, 0%, 100%, 0.319); */
+    text-align: center;
+    font-size: 25px;
+    color: rgba(54, 141, 96, 0.411);
+}
+
+.cerchi {
+    padding: 15px;
+}
+
+.arrow-left,
+.arrow-right {
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    display: flex;
+}
+
+.active {
+    color: rgb(255, 255, 255);
 }

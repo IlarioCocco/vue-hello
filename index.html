@@ -35,36 +35,34 @@
                 <input :class="classeBkgInput" type="text" v-model="message" placeholder="write something">
             </main>
         <!-- main up -->
+        
         <!-- main down -->
             <main class="box">
-                <div>
-                    <button :class="classeBottoneBiancoNero"  
-                        @click="linkImg = '/img/vue_b_w.png' ">
-                       black white
-                    </button>
+                <div class="arrow-left">
+                    <i class="fas fa-chevron-left" @click="leftImg()"></i>
                 </div>
                 <div>
                     <div class="mainDown">
-                        <Transition>
-                            <img v-if="vediImagine" @click="visual()" class="imageLogoVue" :src="linkImg" alt="imagine vue js">
-                        </Transition>
+                        <transition>
+                            <img class="imageLogoVue" v-bind:src="images[indexImage]" img v-if="vediImagine" @click="visual()">
+                        </transition>
                     </div>
-                    <div class="stringheColor">
-                        <h4 :class="classeColore"
-                            v-for="(todo, i) in todosColors" :key="todo.i">
-                            {{i}} {{ todo.codiceColore }},&nbsp
-                        </h4>
+                    <div>
+                        <div class="circles">
+                            <i class="fas fa-circle cerchi" 
+                            v-for="(Image, index) in images"  
+                            v-bind:class="isCircleActive(index)" 
+                            @click="changeImage(index)"></i>
+                        </div>
                     </div>
                 </div>
-                <div>
-                    <button :class="classeBottoneColore"  
-                        @click="linkImg = '/img/vue.svg' ">
-                        to colors
-                    </button>
+                    <div class="arrow-right">
+                        <i class="fas fa-chevron-right" @click="rightImg()"></i>
                 </div>
             </main>
         <!-- main down -->
         </div>
+        
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     <script src="js/main.js"></script>
     </body>
