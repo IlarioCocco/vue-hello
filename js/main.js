@@ -1,8 +1,8 @@
 const app = new Vue({
-        el: "#root", //si puo  dare l'id che si vuole
+        el: "#root",
         data: {
             classeColore: "text-white",
-            message: "HELLO VUE JS",
+            message: "VUE JS AUTO",
             linkImg: "/img/vue.svg",
             classeBkgInput: "input",
             vediImagine: false,
@@ -16,16 +16,16 @@ const app = new Vue({
             string: [],
 
             images: [
-            "/img/vue.svg", 
-            "/img/vue_pink.png",
-            "/img/vue_red.png",
-            "/img/vue_blue.png",
-            "/img/vue_viola.png",
+            {src: "/img/vue.svg", title: "Verde"},
+            {src: "/img/vue_pink.png", title: "Pink"},
+            {src: "/img/vue_red.png", title: "Red"},
+            {src: "/img/vue_blue.png", title: "Blue"},
+            {src: "/img/vue_viola.png", title: "Viola"},
         ],
-
-            indexImage: 0
-
+            indexImage: 0,
+            replayId: null
         },
+
         methods: {
             myFunctionReload: function() {
                 window.location.reload()
@@ -52,8 +52,8 @@ const app = new Vue({
             visual: function() {
                 document.getElementById("vueHello").innerHTML = this.message;
             },
-
-            leftImg: function() {
+            
+            rightImg: function() {
                 this.indexImage++;
 
                 if( this.indexImage >=  this.images.length ) {
@@ -61,7 +61,7 @@ const app = new Vue({
                 }
             },
 
-            rightImg: function() {
+            leftImg: function() {
                 this.indexImage--;
 
                 if ( this.indexImage == - 1 ) {
@@ -78,10 +78,26 @@ const app = new Vue({
                 }
             },
 
-            changeImage: function(indexCircle) {
-                this.indexImage = indexCircle;
+            play: function() {
+                this.replayId = setInterval( this.rightImg, 2000 ) 
             },
-        },
-    }
-);
 
+            stop: function() {
+                if (this.replayId != null) {
+                    clearInterval(this.replayId);
+                }
+            }
+            
+        },
+
+            // metodo non usato a favore del ternario (vedi html) = @click="indexImage = index" 
+            // changeImage: function(indexCircle) {
+            //     this.indexImage = indexCircle;
+            // },
+
+//----------------------------MOUNTED HOOK-------------------------------//
+            mounted: function() {
+                this.play(); 
+            }
+
+});

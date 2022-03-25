@@ -19,9 +19,9 @@
         <div id="root">
         <!-- header -->
             <header>
-                <h2 :class="classeColore" id="vueHello">CIAO VUE JS</h2>
+                <h2 :class="classeColore" id="vueHello">VUE JS AUTO PLAY SLIDER</h2>
                 <div>
-                    <button @click="myFunctionReload()">reload <i class="fa-solid fa-arrow-rotate-right pen"></i></button>
+                    <button @click="myFunctionReload()">replay <i class="fa-solid fa-arrow-rotate-right pen"></i></button>
                     <button @click="changeColor()" class="colore">color <i class="fa-solid fa-fill-drip pen" :class="classeColore"></i></button>
                     <button @click="mySeeFunction" >vue <i class="fa-solid fa-eye pen"></i></button>
                 </div>
@@ -39,25 +39,40 @@
         <!-- main down -->
             <main class="box">
                 <div class="arrow-left">
-                    <i class="fas fa-chevron-left" @click="leftImg()"></i>
+                    <i class="fas fa-chevron-left" @click="leftImg()"  @mouseover="stop()"></i>
                 </div>
+                
                 <div>
+                    <div class="play">
+                        <p @mouseover="stop()">{{images[indexImage].title}}</p>
+                        <!-- <i class="fa-solid fa-play"></i>
+                        <i class="fa-solid fa-pause"></i> -->
+                    </div>
                     <div class="mainDown">
-                        <transition>
-                            <img class="imageLogoVue" v-bind:src="images[indexImage]" img v-if="vediImagine" @click="visual()">
+                        <transition name="fade">
+                            <img class="imageLogoVue" 
+                            v-bind:src="images[indexImage].src" 
+                            v-bind:alt="images[indexImage].title"
+                            img v-if="vediImagine" 
+                            @click="visual()"
+                            @mouseleave="play()"
+                            @mouseover="stop()">
                         </transition>
                     </div>
                     <div>
                         <div class="circles">
-                            <i class="fas fa-circle cerchi" 
+                            <i class="fa-circle far cerchi" 
                             v-for="(Image, index) in images"  
-                            v-bind:class="isCircleActive(index)" 
-                            @click="changeImage(index)"></i>
+                            v-bind:class="isCircleActive(index)"
+                            @click="indexImage = index" ></i>
+                            <!-- ternario (vedi sopra) alternativo al metodo -->
+                            <!-- @click="changeImage(index)" -->
                         </div>
                     </div>
                 </div>
-                    <div class="arrow-right">
-                        <i class="fas fa-chevron-right" @click="rightImg()"></i>
+
+                <div class="arrow-right">
+                    <i class="fas fa-chevron-right" @click="rightImg()"  @mouseover="stop()"></i>
                 </div>
             </main>
         <!-- main down -->
